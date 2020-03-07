@@ -191,7 +191,6 @@ Proxy Group:
 - name: "GlobalMedia"
   type: select
   proxies:
-    - "PROXY"
     - "vaws"
     - "vovh"
     - "vcc"
