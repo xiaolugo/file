@@ -104,6 +104,22 @@ Proxy:
   network: ws    # 网路类型 WS HTTP 等
   ws-path: /ws  # 路径 
 
+- name: "vali" # 软件显示的节点名字
+  type: vmess # 代理类型
+  server: vali.huxiao.co # 服务器 IP
+  port: 443 #  端口号
+  uuid: 7bd07c9b-8218-4b98-b8a3-7c62dbda3028
+  alterId: 64  #额外的 ID
+  cipher: auto
+#  #上面几行为必选参数
+#  #下面几行为可选参数  根据你的配置情况来
+  udp: true    #默认不开启
+  tls: true      #TLS 开启
+#  # skip-cert-verify: true     #默认不开启
+  network: ws    # 网路类型 WS HTTP 等
+  ws-path: /ws  # 路径 
+
+
 - name: "vovh" # 软件显示的节点名字
   type: vmess # 代理类型
   server: vovh.huxiao.co # 服务器 IP
@@ -158,6 +174,7 @@ Proxy Group:
   type: url-test
   proxies:
     - "vaws"
+    - "vali"
     - "vovh"
     - "vcc"
     - "vvm"
@@ -170,6 +187,7 @@ Proxy Group:
   proxies:
     - "自动节点选择"
     - "vaws"
+    - "vali"
     - "vovh"
     - "vcc"
     - "vvm"
@@ -191,6 +209,7 @@ Proxy Group:
   proxies:
     - "PROXY"
     - "vaws"
+    - "vali"
     - "vovh"
     - "vcc"
     - "vvm"
@@ -200,6 +219,7 @@ Proxy Group:
   proxies:
     - "DIRECT"
     - "vaws"
+    - "vali"
     - "vovh"
     - "vcc"
     - "vvm"
